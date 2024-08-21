@@ -22,15 +22,21 @@ dftw -sf [root_dir]
 dftw -cpx [ source_dir] [destination_dir] [file extension] 
 Copy the entire subdirectory rooted at source_dir to destination_dir and do not delete the 
 directory (and contents) rooted at source_dir. 
+
  Exclude files of type denoted by the file extension
+
  The sub-directory structure at the destination must match the subdirectory structure at 
 the source. 
+
  file extension: .c, .txt, .pdf (one of the three) 
+
  If file extension is not provided, all files must be copied 
+
 Example: $dftw -cpx /home/pranga/chapter2 /home/pranga/Documents .txt must copy 
 the entire subdirectory rooted at chapter2 to Documents (minus the .txt files). 
 
 dftw -mv [ source_dir] [destination_dir] 
+
 Move the entire subdirectory directory rooted at source_dir to destination_dir and delete the 
 directory (and contents) rooted at source_dir. 
 
